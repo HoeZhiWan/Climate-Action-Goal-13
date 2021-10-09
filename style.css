@@ -1,0 +1,341 @@
+.body {
+    font-family: Arial;
+}
+
+/* Add a black background color to the top navigation */
+.navbar {
+    background-color: #ffffff;
+    overflow: hidden;
+    border-bottom: 1px solid black;
+    text-align: right;
+}
+  
+/* Style the links inside the navigation bar */
+.navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+}
+  
+/* Change the color of links on hover */
+.navbar a:hover {
+    border-bottom: 3px solid #3f7e44;
+    color: black;
+}
+  
+/* Add an active class to highlight the current page */
+.navbar a.active {
+    background-color: #3f7e44;
+    color: white;
+}
+  
+/* Hide the link that should open and close the navbar on small screens */
+.navbar .icon {
+    display: none;
+}  
+
+.logo{
+    float: right;
+    position: relative;
+    margin-top: 5px;
+}
+
+.navbar h5{
+    margin-top: 18px;
+    float: right;
+    position: relative;
+    font-family: Arial;
+}
+
+.cover{
+    position: relative;
+    text-align: center;
+}
+
+.cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cover h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+
+
+.sdgs {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+}
+
+.sdgs img{
+    float: left;
+    width: 80%;
+    height: 70%;
+    padding-right: 14px;
+    padding-top: 5px;
+    vertical-align: middle;
+}
+
+.button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    padding: 16px 32px;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #3f7e44;
+}
+  
+.button1:hover {
+    background-color: #3f7e44;
+    color: white;
+}
+
+.goal13 {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+
+}
+
+.goal13 img{
+    float: right;
+    width: 75%;
+    padding-right: 14px;
+    padding-top: 10px;
+    vertical-align: middle;
+}
+
+.goal13 .button1 {
+    margin-right: 14px;
+    margin-bottom: 10px;
+    float: right;
+    width: 75%;
+}
+
+.goal13 .text {
+    width: 80%;
+}
+
+.goal13 .img {
+    width: 20%;
+}
+
+.target .target_row:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.target .target_col {
+    float: left;
+    width: 16%;
+    padding: 10px;
+    object-fit: contain;
+}
+
+.Importance {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.Importance img{
+    float: left;
+    width: 90%;
+    height: 70%;
+    padding-top: 5px;
+
+}
+
+.Importance .button1 {
+    float: left;
+    width: 90%;
+}
+
+.Importance .ab {
+    width: 20%;
+}
+
+.Importance .ac {
+    width: 80%;
+}
+
+.Issues .AV {
+    width: 49.10%;
+    border-right: 1px solid black;
+}
+
+.Issues .AW {
+    width: 49.10%;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #3f7e44;
+    color: white;
+  }
+
+footer .button {
+    width: 15%;
+    font-size: 14px;
+    padding: 5px 5px 5px 5px;
+    border:2px solid white;
+    margin-bottom: 15px;
+    background-color: #3f7e44;
+    color: white;
+}
+
+footer .button:hover {
+    background-color: white;
+    color: #3f7e44;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
+@media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+    .cover h1 {
+        font-size: 15px;
+    }
+    .sdgs img{
+        padding-top: 10px;
+        display: block;
+        float: none;
+        height: 60%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sdgs {
+        display:initial;
+        align-items: normal;
+    }
+    .sdgs button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    .sdgs p{
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+    }
+    .goal13 img{
+        padding-top: 10px;
+        display: block;
+        float: none;
+        height: 80%;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .goal13 {
+        display:initial;
+        align-items: normal;
+        float: left;
+    }
+    .goal13 .button1{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 50%;
+    }
+
+    .goal13 .img{
+        width: 100%;
+    }
+
+    .target .target_col{
+        float: left;
+        width: 45%;
+        padding: 5px;
+    }
+
+    .target .middle{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Importance img{
+        padding-top: 10px;
+        display: block;
+        float: none;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .Importance {
+        display:initial;
+        align-items: normal;
+    }
+    .Importance button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .Importance p{
+        padding-bottom: 10px;
+        border-bottom: 1px solid black;
+    }
+    .Importance ab{
+        width: 100%;
+    }
+    .Importance ac{
+        width: 100%;
+    }
+    .Issues .AV{
+        width: unset;
+        border-right: unset;
+        border-bottom: 1px solid black;
+    }
+
+    .Issues .AW {
+        width: unset;
+    }
+
+    footer .button {
+        width:  30%;
+    }
+  }
+  
+/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+}
