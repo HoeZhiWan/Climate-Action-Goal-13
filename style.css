@@ -256,6 +256,16 @@ footer .button:hover {
   margin-left: auto;
   margin-right: auto;
   width: 20%;
+  margin-bottom: 40px;
+}
+
+.reference .button1 {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  margin-bottom: 40px;
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
