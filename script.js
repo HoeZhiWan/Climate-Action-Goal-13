@@ -7,3 +7,16 @@ function navbarFunction() {
       x.className = "navbar";
     }
   }
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("NavBar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
